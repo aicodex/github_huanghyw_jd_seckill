@@ -503,6 +503,7 @@ class JdSeckill(object):
                 break
             except Exception as e:
                 logger.error('预约失败正在重试...')
+            time.sleep(1)
 
     def get_username(self):
         """获取用户信息"""
